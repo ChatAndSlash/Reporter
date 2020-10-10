@@ -1,0 +1,40 @@
+{
+  "name": "reporter",
+  "version": "0.1.0",
+  "description": "Receive events from the queue and pass along to analytics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanHulton/reporter.git"
+  },
+  "jest": {
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(js|jsx)$",
+    "testEnvironment": "node",
+    "verbose": false,
+    "setupFiles": [
+      "./globals"
+    ]
+  },
+  "author": "Dan Hulton",
+  "license": "ISC",
+  "dependencies": {
+    "amplitude": "4.0.0",
+    "amqplib": "0.5.3",
+    "bunyan": "^1.8.12",
+    "bunyan-blackhole": "1.1.1",
+    "dotenv": "8.0.0",
+    "lodash": "4.17.15",
+    "nanoid": "2.0.3",
+    "raven": "2.6.4",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.7"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "nodemon": "1.19.1"
+  }
+}

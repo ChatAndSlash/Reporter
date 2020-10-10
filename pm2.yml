@@ -1,0 +1,6 @@
+---
+  - script: /var/local/Reporter/index.js
+    name: 'reporter'
+    merge_logs: true
+    out_file: '/var/log/reporter.log'
+    error_file: '/var/log/reporter.log'
